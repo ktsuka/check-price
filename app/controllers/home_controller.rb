@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @items = Price.check
+    @items = DigitalItem.all
   end
 end
