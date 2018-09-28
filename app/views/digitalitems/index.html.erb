@@ -1,0 +1,6 @@
+<%= form_tag(:check_digitalitems, method: "get") do %>
+
+  <%= select_tag(:q, options_for_select([['2018年09月23日', 20180923], ['2018年09月28日', 20180928]])) %>
+  <%= submit_tag("Check") %>
+
+<% end %>

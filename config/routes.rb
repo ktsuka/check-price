@@ -1,6 +1,9 @@
 CheckPrice::Application.routes.draw do
-  get "home/index"
-  root 'home#index'
+  get "digitalitems/index"
+  root 'digitalitems#index'
+  resources :digitalitems do
+    collection {get "check"}
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

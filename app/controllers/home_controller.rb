@@ -1,5 +1,9 @@
 class HomeController < ApplicationController
   def index
-    @items = DigitalItem.all
+    @item = DigitalItem.new()
+    @items = DigitalItem.select(:itemid)
+  end
+  
+  def new
   end
 end
